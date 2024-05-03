@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.searchBar {
+  width: 90%;
+  margin: auto auto;
+  display: flex;
+  border-radius: 5px;
+  background-color: rgba(38, 38, 38, 0);
+  border: 2px solid rgba(128, 128, 128, 0.491);
+}
+
+.input {
+  width: 85%;
+  height: 2rem;
+  padding: 1rem;
+  padding-bottom: 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  margin: 0%;
+  border: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+.input::placeholder {
+  color: rgba(190, 186, 186, 0.419);
+}
+
+
+
+.submitBtn {
+  width: 15%;
+  height: 4rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.submitBtn>img {
+  width: 50%;
+}
