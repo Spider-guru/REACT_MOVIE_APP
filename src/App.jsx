@@ -26,7 +26,7 @@ function App() {
 				setQuery={setQuery}
 				queryResult={queryResult}
 				setIsSearchFound={setIsSearchFound}
-        setQueryResult={setQueryResult}
+				setQueryResult={setQueryResult}
 			/>
 
 			<MovieCardContainer
