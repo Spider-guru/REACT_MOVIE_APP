@@ -26,4 +26,4 @@ dist-ssr
 #others:
 vite.config.js
 APIKEY.jsx
-Spinner.svg
+.env
