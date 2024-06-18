@@ -64,7 +64,9 @@ export default function MovieCard({ item }) {
 
 	useEffect(() => {
 		if (data == null) {
-			fetchData(id);
+			setTimeout(() => {
+				fetchData(id);
+			}, 1000);
 		}
 	}, []);
 
