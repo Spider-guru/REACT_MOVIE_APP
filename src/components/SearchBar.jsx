@@ -1,5 +1,5 @@
 import style from "./searchbar.module.css";
-import searchIcon from "../assets/search-icon.svg";
+import searchIcon from "../assets/search-Icon.svg";
 import ApiKey from "./APIKEY"; // go to www.omdbapi.com , sign up and get your API key
 import { useEffect } from "react";
 
