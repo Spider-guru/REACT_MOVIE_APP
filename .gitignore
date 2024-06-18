@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 #others:
-vite.config.js
 .env
