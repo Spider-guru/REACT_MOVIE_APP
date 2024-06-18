@@ -4,7 +4,7 @@ import ApiKey from "./APIKEY"; // go to www.omdbapi.com , sign up and get your A
 import { useEffect } from "react";
 
 export default function SearchBar({ setIsSearchFound, query, setQuery, setQueryResult }) {
-	let Url = `http://www.omdbapi.com?apikey=${ApiKey()}`;
+	let Url = `https://www.omdbapi.com?apikey=${ApiKey()}`;
 	let response;
 	let data;
 
@@ -37,22 +37,24 @@ export default function SearchBar({ setIsSearchFound, query, setQuery, setQueryR
 	return (
 		<form
 			onSubmit={(e) => e.preventDefault()}
-			className={style.searchBar}>
+			className={style.searchBar}
+		>
 			<input
-				type="text"
+				type='text'
 				className={style.input}
-				placeholder="Search movie name, title etc"
+				placeholder='Search movie name, title etc'
 				value={query}
 				onChange={(e) => setQuery(e.target.value)}
 			/>
 
 			<button
-				type="submit"
+				type='submit'
 				className={style.submitBtn}
-				onClick={() => searchItems(query)}>
+				onClick={() => searchItems(query)}
+			>
 				<img
 					src={searchIcon}
-					alt=""
+					alt=''
 				/>
 			</button>
 		</form>
