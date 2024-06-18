@@ -1,5 +1,5 @@
 .card {
-	max-width: 250px;
+	max-width: 300px;
 	height: auto;
 	display: flex;
 	flex-direction: column;
@@ -7,12 +7,39 @@
 	border-radius: 5px;
 	border: 1px solid #5056cc;
 	padding: 1px;
-	opacity: 0.6;
-	transition: all 0.3s ease;
+	position: relative;
 }
 
-.card:hover {
-	opacity: 1;
+.cardDetails {
+	background-color: #141313e7;
+	font-size: 1.2rem;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	transition: all 0.3s ease;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color: #ffffffa6;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.8rem;
+}
+
+.detailHead {
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.detail {
+	width: 90%;
+	margin: auto auto;
+}
+
+.card:hover > .cardDetails {
+	visibility: visible;
 }
 
 img {
